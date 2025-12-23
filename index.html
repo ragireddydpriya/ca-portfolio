@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CA Venkatesh Achanta Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">CA Venkatesh</h1>
+    <ul class="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="header-content">
+    <h1>Venkatesh Achanta, CA</h1>
+    <p class="tagline">Tax • Audit • Compliance • Advisory</p>
+    <p class="subtitle">Expert Financial Solutions for Your Business</p>
+    <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
+  </div>
+</header>
+
+<section id="about" class="about-section">
+  <div class="section-content">
+    <h2>About Me</h2>
+    <div class="about-card">
+      <p>
+        I am a Chartered Accountant with over 6+ years of experience in taxation,
+        auditing, and financial reporting. I help individuals and businesses
+        stay compliant and financially secure.
+      </p>
+      <div class="experience-box">
+        <div class="exp-item">
+          <span class="exp-number">6+</span>
+          <span class="exp-label">Years Experience</span>
+        </div>
+        <div class="exp-item">
+          <span class="exp-number">500+</span>
+          <span class="exp-label">Clients Served</span>
+        </div>
+        <div class="exp-item">
+          <span class="exp-number">100%</span>
+          <span class="exp-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <div class="section-content">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card" onclick="showContactChoice('GST')">
+        <div class="service-icon">📊</div>
+        <h3>GST</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('ITR')">
+        <div class="service-icon">📝</div>
+        <h3>ITR</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Income Tax')">
+        <div class="service-icon">💰</div>
+        <h3>Income Tax</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Audit')">
+        <div class="service-icon">✓</div>
+        <h3>Audit</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Consultant')">
+        <div class="service-icon">👔</div>
+        <h3>Consultant</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Tax Planning')">
+        <div class="service-icon">📈</div>
+        <h3>Tax Planning</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Accounting')">
+        <div class="service-icon">📋</div>
+        <h3>Accounting</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Company Registration')">
+        <div class="service-icon">🏢</div>
+        <h3>Company Registration</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('GST Compliance')">
+        <div class="service-icon">✅</div>
+        <h3>GST Compliance</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('GST Return')">
+        <div class="service-icon">📄</div>
+        <h3>GST Return</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('GST Notice')">
+        <div class="service-icon">⚠️</div>
+        <h3>GST Notice</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Investment Management')">
+        <div class="service-icon">💼</div>
+        <h3>Investment Management</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Incorporation')">
+        <div class="service-icon">📑</div>
+        <h3>Incorporation</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Business Compliance')">
+        <div class="service-icon">🛡️</div>
+        <h3>Business Compliance</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Financial Planning')">
+        <div class="service-icon">🎯</div>
+        <h3>Financial Planning</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Business Accounting')">
+        <div class="service-icon">📊</div>
+        <h3>Business Accounting</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Compliance Expert')">
+        <div class="service-icon">⭐</div>
+        <h3>Compliance Expert</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('MSME')">
+        <div class="service-icon">🚀</div>
+        <h3>MSME</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Books Keeping')">
+        <div class="service-icon">📚</div>
+        <h3>Books Keeping</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('TDS & Compliance')">
+        <div class="service-icon">🏦</div>
+        <h3>TDS & Compliance</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Financial Statements')">
+        <div class="service-icon">📖</div>
+        <h3>Financial Statements</h3>
+      </div>
+      <div class="service-card" onclick="showContactChoice('Startup Advisory')">
+        <div class="service-icon">💡</div>
+        <h3>Startup Advisory</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="section-content">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-card" onclick="window.open('https://outlook.live.com/mail/0/compose', '_blank')">
+          <h3>📧 Email</h3>
+          <p>venkateshachanta79@hotmail.com</p>
+        </div>
+        <div class="contact-card" onclick="window.open('https://wa.me/919581012611?text=Hello%20Venkatesh', '_blank')">
+          <h3>� WhatsApp</h3>
+          <p>+91 9581012611</p>
+        </div>
+        <div class="contact-card" onclick="window.location.href='tel:+919581012611'">
+          <h3>☎️ Mobile</h3>
+          <p>+91 9581012611</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Venkatesh Achanta, Chartered Accountant</p>
+    <p class="footer-tagline">Trusted by businesses across Hyderabad</p>
+  </div>
+</footer>
+
+<!-- Contact Choice Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Choose Your Contact Method</h2>
+    <p id="serviceNameDisplay"></p>
+    <div class="modal-buttons">
+      <button class="modal-btn email-btn" onclick="showEmailTemplate()">
+        📧 Send Email
+      </button>
+      <button class="modal-btn whatsapp-btn" onclick="showWhatsAppTemplate()">
+        💬 WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Message Template Modal -->
+<div id="messageModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMessageModal()">&times;</span>
+    <h2 id="messageModalTitle">Your Message</h2>
+
+    <div class="message-preview">
+      <p id="messageTemplate"></p>
+    </div>
+
+    <div class="modal-buttons">
+      <button class="modal-btn" id="sendBtn" onclick="sendMessage()" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%); color: white; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);">
+        ✓ Send Message
+      </button>
+      <button class="modal-btn" onclick="closeMessageModal()" style="background: #e0e0e0; color: #333;">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let selectedService = '';
+  let contactMethod = '';
+  const hotmailEmail = 'venkateshachanta79@hotmail.com';
+  const whatsappNumber = '919581012611';
+
+  function showContactChoice(serviceName) {
+    console.log('Service clicked:', serviceName);
+    selectedService = serviceName;
+    document.getElementById('serviceNameDisplay').textContent = `Contact us about: ${serviceName}`;
+    const modal = document.getElementById('contactModal');
+    console.log('Modal element:', modal);
+    modal.style.display = 'block';
+    console.log('Modal display set to:', modal.style.display);
+  }
+
+  function closeModal() {
+    document.getElementById('contactModal').style.display = 'none';
+  }
+
+  function closeMessageModal() {
+    document.getElementById('messageModal').style.display = 'none';
+  }
+
+  function showEmailTemplate() {
+    contactMethod = 'email';
+    let template;
+    if (selectedService === 'ITR') {
+      template = `Hello Venkatesh,\n\nI want to avail <b>Service: ${selectedService}</b>. Could we connect?`;
+    } else {
+      template = `Hello Venkatesh,\n\nI want to avail <b>Service: ${selectedService}</b> for my organization. Could we connect?`;
+    }
+    document.getElementById('messageModalTitle').textContent = '📧 Email Message';
+    document.getElementById('messageTemplate').innerHTML = template.replace(/\n/g, '<br>');
+    document.getElementById('contactModal').style.display = 'none';
+    document.getElementById('messageModal').style.display = 'block';
+  }
+
+  function showWhatsAppTemplate() {
+    contactMethod = 'whatsapp';
+    let template;
+    if (selectedService === 'ITR') {
+      template = `Hello Venkatesh, I want to avail <b>Service: ${selectedService}</b>. Could we connect?`;
+    } else {
+      template = `Hello Venkatesh, I want to avail <b>Service: ${selectedService}</b> for my organization. Could we connect?`;
+    }
+    document.getElementById('messageModalTitle').textContent = '💬 WhatsApp Message';
+    document.getElementById('messageTemplate').innerHTML = template.replace(/\n/g, '<br>');
+    document.getElementById('contactModal').style.display = 'none';
+    document.getElementById('messageModal').style.display = 'block';
+  }
+
+  function sendMessage() {
+    let message;
+    if (selectedService === 'ITR') {
+      message = `Hello Venkatesh,\n\nI want to avail *Service: ${selectedService}*. Could we connect?`;
+    } else {
+      message = `Hello Venkatesh,\n\nI want to avail *Service: ${selectedService}* for my organization. Could we connect?`;
+    }
+
+    if (contactMethod === 'email') {
+      const subject = encodeURIComponent(`Inquiry about ${selectedService}`);
+      const body = encodeURIComponent(message);
+      const emailURL = `https://outlook.live.com/mail/0/compose?to=${hotmailEmail}&subject=${subject}&body=${body}`;
+      window.open(emailURL, '_blank');
+    } else if (contactMethod === 'whatsapp') {
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    }
+    closeMessageModal();
+  }
+
+  // Close modal when clicking outside of it
+  window.onclick = function(event) {
+    const contactModal = document.getElementById('contactModal');
+    const messageModal = document.getElementById('messageModal');
+    if (event.target == contactModal) {
+      contactModal.style.display = 'none';
+    }
+    if (event.target == messageModal) {
+      messageModal.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
